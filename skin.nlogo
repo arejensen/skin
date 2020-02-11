@@ -246,7 +246,7 @@ to go
     if partnership-strategy != "no partners" [ collaborate ]
     do-research
     manufacture
-    pay-taxes
+    pay-taxes ; seems to be depriciation, not taxes directly
   ]
   find-suppliers
   buy
@@ -617,7 +617,7 @@ end
 
 ;firm procedure
 to collaborate
-  if not Partnering [ stop ]
+  if not Partnering [ stop ] ; the Partnering variable is not documented in the code?
 
   if not trading? [
     find-partners
@@ -830,7 +830,7 @@ to adjust-expertise
     [ ; capability has not been used - decrease expertise and drop capability if expertise has fallen to zero
       ifelse expertise > 0
       [ set expertises replace-item location expertises (expertise - 1) ]
-      [ forget-capability location set location location - 1]
+      [ forget-capability location set location location - 1] ; why location - 1 ? intuitively this would move back to the same capability again as its incr. by one below
     ]
     set location location + 1
   ]
