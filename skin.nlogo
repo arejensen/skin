@@ -210,6 +210,9 @@ to initialise-firm
   set ih []
   set inputs []
   set research-direction "random"
+  ; note that research-direction is also set to random as innovation hypotheses are created
+  ; in function make-innovation-hypothesis. This function is called in several places, so beware if
+  ; you want to change this for some reason
   set done-rad-research false
   set partners no-turtles
   set previous-partners no-turtles
