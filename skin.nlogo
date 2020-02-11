@@ -650,6 +650,7 @@ end
 ; according to the current partnership strategy
 
 ;firm procedure
+; TODO: it seems like if the adverts are only passively read and not advertised in any way. Is this correct?
 to-report compatible? [ possible-partner ]
   let attractiveness 0
 
