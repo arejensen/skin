@@ -117,6 +117,11 @@ firms-own [
   ;product
   product                         ; the product produced by this firm (a number)
   inputs                          ; the products required as inputs to make the product
+  ; it seems like the quality it only used when a buyer has found the quality's underlaying product
+  ; on the market and the product is competing for the lowest price.
+  ; That is if product a1 with associated quality q1 has the lowest 
+  ; price together with product a2 with associated quality q2, the
+  ; product chosen will be determined by min(q1, q2).
   quality                         ; the quality of the product
   selling?                        ; whether I could make the product to sell this round
                                   ;      (I can make product only if all my inputs are
