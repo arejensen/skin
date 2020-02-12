@@ -246,7 +246,7 @@ to go
     if partnership-strategy != "no partners" [ collaborate ]
     do-research
     manufacture
-    pay-taxes ; seems to be depriciation, not taxes directly
+    pay-taxes ; seems to be depreciation, not taxes directly
   ]
   find-suppliers
   buy
