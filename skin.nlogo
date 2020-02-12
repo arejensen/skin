@@ -390,6 +390,7 @@ to make-inputs
 
   ; it can happen that it is impossible to find a distinct set of inputs and product, especially if the
   ; innovation hypothesis is short.  In such cases, give up.
+  ; NOTE: What is the conceptual interpretation / meaning of this?
 
   let tries 0
 
